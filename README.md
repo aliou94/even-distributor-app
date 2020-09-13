@@ -1,3 +1,5 @@
+TODO: Need to add a descritption of the applicattion
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
