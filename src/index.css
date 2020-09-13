@@ -1,1 +1,152 @@
 
+background-size:cover ;
+background-position:center ;
+}
+
+.login-page {
+    width: 360px;
+    padding:10% 0 0 ;
+    margin: auto;
+}
+.reset-form {
+    display: none;
+}
+.form{
+    position: relative;
+    z-index: 1;
+    background:rgba(195, 7, 186, 0.8);
+    max-width:  360px;
+    margin: 0 auto 100px ;
+    padding:45px ;
+    text-align: center;
+
+}
+.form input{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    outline: 1px ;
+    background: #f2f2f2; ;
+    width:100% ;
+    border: 0;
+    margin:0 0 15px ;
+    padding:15px ;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-transform: inherit;
+
+}
+.form button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: rgb(175, 76, 142);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: lowercase;
+}
+.form button:hover,.form button:active{
+    background: rgba(255, 255, 255, 0.404);
+}
+.form a {
+    text-decoration: underline;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+.form a:hover{
+    color:black
+}
+
+
+/* css for my registration pg
+Add padding to containers */
+* {box-sizing: border-box }
+
+.container {
+    padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+    background-color:  rgb(175, 76, 142);;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: rgb(175, 76, 142);
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+/* Style the form - display items horizontally */
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+    margin: 10px 10px 10px 0;
+}
+
+/* Style the input fields */
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 5px 5px 0;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 100px;
+}
+
+/* Style the submit button */
+.form-inline button {
+    padding: 10px 20px;
+    background-color:  rgb(175, 76, 142);;
+    border: 1px solid #ddd;
+    color: white;
+}
+
+.form-inline button:hover {
+    background-color: rgb(175, 76, 142);;
+}
