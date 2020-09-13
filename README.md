@@ -1,4 +1,4 @@
-TODO: Need to add a descritption of the application
+TODO: Need to add a descritption of the application.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
