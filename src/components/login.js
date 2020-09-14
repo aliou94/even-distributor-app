@@ -1,4 +1,5 @@
 import React from "react";
+import HomePage from "./components/home";
 import '../index.css';
 
 
@@ -24,11 +25,7 @@ export default function Login() {
     }
 
     if(show){
-        return (
-            <div>
-                The main page component should be implemented here
-            </div>
-        )
+        return <HomePage/>
     }
 
 
