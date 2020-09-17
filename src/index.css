@@ -1,4 +1,4 @@
-
+{
 background-size:cover ;
 background-position:center ;
 }
@@ -8,13 +8,11 @@ background-position:center ;
     padding:10% 0 0 ;
     margin: auto;
 }
-.reset-form {
-    display: none;
-}
+
 .form{
     position: relative;
     z-index: 1;
-    background:rgba(195, 7, 186, 0.8);
+    background:deepskyblue;
     max-width:  360px;
     margin: 0 auto 100px ;
     padding:45px ;
@@ -24,7 +22,7 @@ background-position:center ;
 .form input{
     font-family:Georgia, 'Times New Roman', Times, serif ;
     outline: 1px ;
-    background: #f2f2f2; ;
+    background: #f2f2f2;
     width:100% ;
     border: 0;
     margin:0 0 15px ;
@@ -38,11 +36,10 @@ background-position:center ;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
     outline: 0;
-    background: rgb(175, 76, 142);
+    background: ghostwhite;
     width: 100%;
     border: 0;
     padding: 15px;
-    color: #FFFFFF;
     font-size: 14px;
     cursor: pointer;
     text-transform: lowercase;
@@ -92,7 +89,7 @@ hr {
 
 /* Set a style for the submit/register button */
 .registerbtn {
-    background-color:  rgb(175, 76, 142);;
+    background-color: cadetblue;
     color: white;
     padding: 16px 20px;
     margin: 8px 0;
@@ -108,7 +105,7 @@ hr {
 
 /* Add a blue text color to links */
 a {
-    color: rgb(175, 76, 142);
+    color: cadetblue;
 }
 
 /* Set a grey background color and center the text of the "sign in" section */
@@ -142,7 +139,7 @@ a {
 /* Style the submit button */
 .form-inline button {
     padding: 10px 20px;
-    background-color:  rgb(175, 76, 142);;
+    background-color:  cadetblue;
     border: 1px solid #ddd;
     color: white;
 }

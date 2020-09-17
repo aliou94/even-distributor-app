@@ -17,43 +17,52 @@ export function ForgotPassword() {
     )
 }
 
-export function Registrtion() {
+function ResetCode() {
     return(
-        <React.Fragment>
-            <form action="action_page.php">
-                <div className="container">
-                    <h1>Register</h1>
-                    <p>Please fill in this form to create an account.</p>
-
-
-                    <label htmlFor="f-name"><b>First Name</b></label>
-                    <input type="text" placeholder="First Name" name="f-name" required/>
-
-                    <label htmlFor="l-name"><b>last Name</b></label>
-                    <input
-                        type="text"
-                        placeholder="last Name"
-                        name="l-name"
-                        required
-                    />
-
-                    <span>
-                        <label htmlFor="email"><b>Email</b></label>
-                    <input type="email" placeholder="Enter Email" name="email"/>
-                    </span>
-                    <br/>
-                    <span> <label htmlFor="Phone"><b>Phone Number</b></label>
-                        <input type="number" placeholder="123-45-678" name="cel-number" required/>
-                       </span>
-
-                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-                    <button type="submit" className="registerbtn">Register</button>
-                </div>
-
-                <div className="container sign-in">
-                    <p>Already have an account? <a href="C:\Users\ahmed\Desktop\sirus app\login.html">Sign in</a>.</p>
-                </div>
-            </form>
-        </React.Fragment>
+      <div className='login-page'>
+          <form className="form ">
+              <input type="password" placeholder="new-password"/>
+              <input type="password" placeholder="confirm-password"/>
+              <button>Update-Password</button>
+          </form>
+      </div>
     )
 }
+
+export function ResetPassword() {
+    const[show,setShow]=React.useState(false)
+    const [password, setPassword] = React.useState('')
+    const [invalid, setInvalid] = React.useState(false)
+    const  handelClick = (e)=>{
+        e.preventDefault()
+       return  (
+           password ==='someFilly'
+               ?setShow(true)
+               : setInvalid(true)
+
+    )}
+
+    return(
+        show?<ResetCode/>:null,
+        <div className="login-page">
+                <form className="form">
+                    <input
+                        type="password"
+                        placeholder="Temporary Pass code"
+                        value={password}
+                        onChange={(event => {setPassword(event.target.value)})}
+                    />
+                    <span style={{display: invalid ? 'inline' :'none', color:'black'}}>
+                       <p>Invalid pass code</p>
+                    </span>
+                    <hr/>
+                    <span>
+                            <button onClick={handelClick}>verify</button>
+                    </span>
+
+                </form>
+        </div>
+    )
+}
+
+
